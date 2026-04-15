@@ -21,7 +21,7 @@ import { configValidationSchema } from './config.schema';
         return {
           type: 'postgres',
           autoLoadEntities: true,
-          synchronize: !isProduction,
+          synchronize: true,
 
           ssl: isProduction,
           extra: {
